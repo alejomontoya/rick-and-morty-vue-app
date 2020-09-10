@@ -14,7 +14,7 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:alejomontoya/alejomontoya.github.io.git master
+git push -f https://github.com/alejomontoya/ricky-and-morty-vue-app.git master:gh-pages
 
 
 cd -

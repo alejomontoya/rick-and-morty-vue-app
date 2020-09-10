@@ -8,7 +8,7 @@
       </div>
       <div class="card-content">
         <h3 class="title is-size-4">{{character.name}}</h3>
-        <button class="button is-success is-rounded is-small" @click="showMore(character.id)">Ver mas</button>
+        <button class="button is-success is-rounded is-small" @click="showMore(character.id)">Show more</button>
       </div>
     </div>
   </div>

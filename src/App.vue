@@ -4,20 +4,20 @@
       <div class="hero-body">
         <h1 class="title">
           <span class="has-text-success">R&M</span>
-          <span class="subtitle">Personajes</span>
+          <span class="subtitle">Characters</span>
         </h1>
         <div class="field has-addons is-pulled-right">
           <div class="control">
             <input
               type="text"
               v-model="search"
-              placeholder="buscar por nombre"
+              placeholder="Search by name"
               class="input is-rounded"
               v-on:keyup.enter="searchData"
             >
           </div>
           <div class="control">
-            <button @click="searchData" class="button is-success is-rounded">Buscar</button>
+            <button @click="searchData" class="button is-success is-rounded">Search</button>
           </div>
         </div>
       </div>
@@ -33,13 +33,13 @@
         />
       </div>
       <nav class="pagination" role="navigartion" aria-label="pagination">
-        <a class="pagination-previous" @click="changePage(page - 1)">Anterior</a>
+        <a class="pagination-previous" @click="changePage(page - 1)">Before</a>
         <ul class="pagination-list">
           <li>
             <a class="pagination-link is-current">{{page}}</a>
           </li>
         </ul>
-        <a class="pagination-next" @click="changePage(page + 1)">Siguiente</a>
+        <a class="pagination-next" @click="changePage(page + 1)">Next</a>
       </nav>
     </div>
 
@@ -47,19 +47,19 @@
       <div class="modal-background" @click="modal = false"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Acerca de: {{currentCharacter.name}}</p>
+          <p class="modal-card-title">About of: {{currentCharacter.name}}</p>
         </header>
         <div class="modal-card-body">
-          <strong>Genero:</strong>
+          <strong>Genere:</strong>
           <p>{{currentCharacter.gender}}</p>
-          <strong>Estado:</strong>
+          <strong>Status:</strong>
           <p>{{currentCharacter.status}}</p>
-          <strong>Raza:</strong>
+          <strong>Species:</strong>
           <p>{{currentCharacter.species}}</p>
         </div>
 
         <footer class="modal-card-foot">
-          <button class="button is-danger" @click="modal = false">Cerrar</button>
+          <button class="button is-danger" @click="modal = false">Close</button>
         </footer>
       </div>
     </div>
